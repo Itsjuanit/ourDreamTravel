@@ -1,77 +1,39 @@
-<p align="center">
-  <a href="" rel="noopener">
- <img src="./SRC/OurDreamTravel.png" alt="Project logo"></a>
-</p>
+# Proyecto Our Dream Travel
 
-<h3 align="center">Proyecto de Our Dream Travel</h3>
-
-<div align="center">
-
-[![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
-
-</div>
-
----
-
-<p align="center"> 
-    <br> 
-</p>
-
-## 📝 Table of Contents
+## Table of Contents
 
 - [Contenido](#about)
-- [Getting Started](#getting_started)
-- [Deployment](#deployment)
-- [Usos](#usage)
-- [Lenguajes de programación](#built_using)
-- [TODO](../TODO.md)
-- [Contribuir](../CONTRIBUTING.md)
-- [Autor](#authors)
-- [Acknowledgments](#acknowledgement)
+- [¿Comó comenzar?](#getting_started)
+- [Uso](#usage)
+- [Autor](../CONTRIBUTING.md)
 
-## 🧐 CONTENIDO <a name = "about"></a>
+## Sobre Our Dream Travel <a name = "about"></a>
 
-Vanesa me contacto, por medio de otra persona, siempre ha sido muy atenta y dispuesta a los cambios, sugerencias que he dado, la pagina en si, es simple, minimalista, busca 
-conectar con el cliente, que este se quede y pueda concretar una venta / contacto.
+El proyecto consta de una pagina web simple, con algunas pantallas, toda la pagina es responsive. Our Dream Travel es una empresa que se dedica a vender 
+viajes a medida o en paquetes, brindando la mejor atención posible.
 
-## 🏁 Getting Started <a name = "getting_started"></a>
+## ¿Comó comenzar? <a name = "getting_started"></a>
 
-En esta pagina esta el live <a href="http://ourdreamtravel.tur.ar/" target="_blank">demo.</a>
+Es un proyecto donde se intenta mantener a los clientes y que estos realicen un contacto o compra. lo que llamaos un call to action.
+Para comenzar, usar git clone o descargar el archivo zip.
 
+### Pre requisitios
+
+Instalar SASS, yo personalmente, uso un pluggin de VSC llamado Sass compiller, con Live Server
+
+```
 Give examples
 ```
 
-### Installing
+### Instalando
 
-A step by step series of examples that tell you how to get a development env running.
+1-Descargar el zip del proyecto o realizar git clone.
+2-Instalar Sass
+3-Descargar glide.js o usar el cdn, en el proyecto ya viene con cdn.
 
-Say what the step will be
 
-```
-Give the example
-```
+## Uso <a name = "usage"></a>
+Hay un live <a href="http://ourdreamtravel.tur.ar/">demo</a>.
 
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
-
-## ⛏️ Built Using <a name = "built_using"></a>
-
-- HTML5
-- CSS3
-- SCSS
-- JAVASCRIPT
-- ANIMATE.CSS
-- GLIDE.JS
-## ✍️ Authors <a name = "authors"></a>
-
-- [@itsjuanit](https://github.com/Itsjuanit) - Idea & comienzo de trabajo.
-
-- [PORTFOLIO](https://portfolio-itsjuanit.now.sh/)
+### PORTFOLIO
+<a href="https://portfolio-itsjuanit.now.sh/">Itsjuanit</a>
