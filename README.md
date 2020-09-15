@@ -16,7 +16,7 @@
 
 ---
 
-<p align="center"> Este es un proyecto, donde se realizo la pagina web, con responsive design.
+<p align="center"> 
     <br> 
 </p>
 
@@ -39,7 +39,7 @@ conectar con el cliente, que este se quede y pueda concretar una venta / contact
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+En esta pagina esta el live <a href="http://ourdreamtravel.tur.ar/" target="_blank">demo.</a>
 
 ### Prerequisites
 
