@@ -16,23 +16,23 @@
 
 ---
 
-<p align="center"> Few lines describing your project.
+<p align="center"> Este es un proyecto, donde se realizo la pagina web, con responsive design.
     <br> 
 </p>
 
 ## 📝 Table of Contents
 
-- [About](#about)
+- [Contenido](#about)
 - [Getting Started](#getting_started)
 - [Deployment](#deployment)
-- [Usage](#usage)
-- [Built Using](#built_using)
+- [Usos](#usage)
+- [Lenguajes de programación](#built_using)
 - [TODO](../TODO.md)
-- [Contributing](../CONTRIBUTING.md)
-- [Authors](#authors)
+- [Contribuir](../CONTRIBUTING.md)
+- [Autor](#authors)
 - [Acknowledgments](#acknowledgement)
 
-## 🧐 About <a name = "about"></a>
+## 🧐 CONTENIDO <a name = "about"></a>
 
 Write about 1-2 paragraphs describing the purpose of your project.
 
