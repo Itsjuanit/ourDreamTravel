@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="./SRC/OurDreamTravel.png" alt="Project logo"></a>
+ <img src="./SRC/OurDreamTravel.png" alt="Project logo"></a>
 </p>
 
 <h3 align="center">Proyecto de Our Dream Travel</h3>
