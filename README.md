@@ -34,7 +34,8 @@
 
 ## 🧐 CONTENIDO <a name = "about"></a>
 
-Write about 1-2 paragraphs describing the purpose of your project.
+Vanesa me contacto, por medio de otra persona, siempre ha sido muy atenta y dispuesta a los cambios, sugerencias que he dado, la pagina en si, es simple, minimalista, busca 
+conectar con el cliente, que este se quede y pueda concretar una venta / contacto.
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
