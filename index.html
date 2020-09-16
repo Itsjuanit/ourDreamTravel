@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Estilos/style.css">
-    <link rel="stylesheet" href="/Estilos/reset.css">
+    <link rel="stylesheet" href="/CSS/reset.css">
+    <link rel="stylesheet" href="/CSS/style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/SRC/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/SRC/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/SRC/favicon-16x16.png">
@@ -17,15 +17,181 @@
 
 <body>
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
-    <!-- HEADER CON MENU -->
-    <header class="header">
-        <nav class="header-nav">
-            <a href="" class="header-nav-links">Inicio</a>
-            <a href="" class="header-nav-links">Sobre nosotros</a>
-            <a href="" class="header-nav-links">Contacto</a>
-        </nav>
-    </header>
-
+    <div class="wrapper">
+        <!--Aca comienza el header-->
+        <header class="header">
+            <button class="header-menu js-menuHamburger"><i class="fas fa-bars"></i></button>
+            <a href="" class="header-logo"><img src="/SRC/OurDreamTravel.png" alt="Logo de empresa Our Dream Travel"
+                    border="0" width="160px"></a>
+            <nav class="header-nav js-nav">
+                <a href="#inicio" class="anchor">Inicio</a>
+                <a href="#sobreNos" class="anchor">Sobre Nosotros</a>
+                <a href="#Contacto" class="anchor btn-1">Contacto</a>
+            </nav>
+        </header>
+        <!--Aca comienza el main-->
+        <main class="main">
+            <!--Serie principal con botones y breve descripcion-->
+            <div class="main-photo">
+                <h2 class="main-photo-secondarytText">Viaja con</h2>
+                <h1 class="main-photo-principalText">Our Dream Travel</h1>
+                <div class="content">
+                    <div class="content__container">
+                        <p class="content__container__text">Viaja</p>
+                        <ul class="content__container__list">
+                            <li class="content__container__list__item">seguro!</li>
+                            <li class="content__container__list__item">feliz!</li>
+                            <li class="content__container__list__item">tranquilo!</li>
+                            <li class="content__container__list__item">a descansar!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--Comienzo el carousel-->
+            <div class="main-carousel-principal" id="series">
+                <div class="first-carousel">
+                    <div class="series-title-one">Series</div>
+                    <div class="glide carousels">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide"><a href="/HTML/preview-serie.html" class="series-images"><img
+                                            src="/SRC/images-courflix/Bitmap-1.png" alt=""></a></li>
+                                <li class="glide__slide"><a href="/HTML/preview-serie.html" class="series-iamges"><img
+                                            src="/SRC/images-courflix/Bitmap-10.png" alt=""></a></li>
+                                <li class="glide__slide"><a href="/HTML/preview-serie.html" class="series-iamges"><img
+                                            src="/SRC/images-courflix/Bitmap-2.png" alt=""></a></li>
+                                <li class="glide__slide"><a href="/HTML/preview-serie.html" class="series-iamges"><img
+                                            src="/SRC/images-courflix/Bitmap-3.png" alt=""></a></li>
+                                <li class="glide__slide"><a href="/HTML/preview-serie.html" class="series-iamges"><img
+                                            src="/SRC/images-courflix/Bitmap-4.png" alt=""></a></li>
+                                <li class="glide__slide"><a href="/HTML/preview-serie.html" class="series-iamges"><img
+                                            src="/SRC/images-courflix/Bitmap-5.png" alt=""></a></li>
+                                <li class="glide__slide"><a href="/HTML/preview-serie.html" class="series-iamges"><img
+                                            src="/SRC/images-courflix/Bitmap-6.png" alt=""></a></li>
+                                <li class="glide__slide"><a href="/HTML/preview-serie.html" class="series-iamges"><img
+                                            src="/SRC/images-courflix/Bitmap-7.png" alt=""></a></li>
+                                <li class="glide__slide"><a href="/HTML/preview-serie.html" class="series-iamges"><img
+                                            src="/SRC/images-courflix/Bitmap-2.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="glide__arrows flechas" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                                <</button> <button class="glide__arrow glide__arrow--right" data-glide-dir=">">>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-carousel">
+                    <div class="series-title">Seguir viendo contenido de Juani</div>
+                    <div class="glide carousels">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide"><a href="/HTML/preview-serie.html" class="series-iamges"><img
+                                            src="/SRC/images-courflix/Bitmap-2.png" alt="">
+                                        <div class="progress">
+                                            <div class="progress-bar"></div>
+                                        </div>
+                                    </a></li>
+                                <li class="glide__slide"><a href="/HTML/preview-serie.html" class="series-images"><img
+                                            src="/SRC/images-courflix/Bitmap-1.png" alt="">
+                                        <div class="progress-A">
+                                            <div class="A"></div>
+                                        </div>
+                                    </a></li>
+                                <li class="glide__slide"><a href="/HTML/preview-serie.html" class="series-iamges"><img
+                                            src="/SRC/images-courflix/Bitmap-4.png" alt="">
+                                        <div class="progress-B">
+                                            <div class="B"></div>
+                                        </div>
+                                    </a></li>
+                                <li class="glide__slide"><a href="/HTML/preview-serie.html" class="series-iamges"><img
+                                            src="/SRC/images-courflix/Bitmap-3.png" alt="">
+                                        <div class="progress-C">
+                                            <div class="C"></div>
+                                        </div>
+                                    </a></li>
+                                <li class="glide__slide"><a href="/HTML/preview-serie.html" class="series-iamges"><img
+                                            src="/SRC/images-courflix/Bitmap-4.png" alt="">
+                                        <div class="progress-D">
+                                            <div class="D"></div>
+                                        </div>
+                                    </a></li>
+                                <li class="glide__slide"><a href="/HTML/preview-serie.html" class="series-iamges"><img
+                                            src="/SRC/images-courflix/Bitmap-5.png" alt="">
+                                        <div class="progress-E">
+                                            <div class="E"></div>
+                                        </div>
+                                    </a></li>
+                                <li class="glide__slide"><a href="/HTML/preview-serie.html" class="series-iamges"><img
+                                            src="/SRC/images-courflix/Bitmap-6.png" alt="">
+                                        <div class="progress-F">
+                                            <div class="F"></div>
+                                        </div>
+                                    </a></li>
+                                <li class="glide__slide"><a href="/HTML/preview-serie.html" class="series-iamges"><img
+                                            src="/SRC/images-courflix/Bitmap-7.png" alt="">
+                                        <div class="progress-G">
+                                            <div class="G"></div>
+                                        </div>
+                                    </a></li>
+                                <li class="glide__slide"><a href="/HTML/preview-serie.html" class="series-iamges"><img
+                                            src="/SRC/images-courflix/Bitmap-2.png" alt="">
+                                        <div class="progress-H">
+                                            <div class="H"></div>
+                                        </div>
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="glide__arrows flechas" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                                <</button> <button class="glide__arrow glide__arrow--right" data-glide-dir=">">>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="third-carousel" id="recientes">
+                    <div class="series-title">Agregado recientemente</div>
+                    <div class="glide carousels">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide"><a href="/HTML/preview-serie.html" class="series-iamges"><img
+                                            src="/SRC/images-courflix/Bitmap-7.png" alt=""></a></li>
+                                <li class="glide__slide"><a href="/HTML/preview-serie.html" class="series-iamges"><img
+                                            src="/SRC/images-courflix/Bitmap-2.png" alt=""></a></li>
+                                <li class="glide__slide"><a href="/HTML/preview-serie.html" class="series-images"><img
+                                            src="/SRC/images-courflix/Bitmap-1.png" alt=""></a></li>
+                                <li class="glide__slide"><a href="/HTML/preview-serie.html" class="series-iamges"><img
+                                            src="/SRC/images-courflix/Bitmap-10.png" alt=""></a></li>
+                                <li class="glide__slide"><a href="/HTML/preview-serie.html" class="series-iamges"><img
+                                            src="/SRC/images-courflix/Bitmap-2.png" alt=""></a></li>
+                                <li class="glide__slide"><a href="/HTML/preview-serie.html" class="series-iamges"><img
+                                            src="/SRC/images-courflix/Bitmap-3.png" alt=""></a></li>
+                                <li class="glide__slide"><a href="/HTML/preview-serie.html" class="series-iamges"><img
+                                            src="/SRC/images-courflix/Bitmap-4.png" alt=""></a></li>
+                                <li class="glide__slide"><a href="/HTML/preview-serie.html" class="series-iamges"><img
+                                            src="/SRC/images-courflix/Bitmap-5.png" alt=""></a></li>
+                                <li class="glide__slide"><a href="/HTML/preview-serie.html" class="series-iamges"><img
+                                            src="/SRC/images-courflix/Bitmap-6.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="glide__arrows flechas" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                                <</button> <button class="glide__arrow glide__arrow--right" data-glide-dir=">">>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
+
+<!--LIBRERIA GLIDE CDN-->
+
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script src="/JS/slide.js"></script>
+
+<!--Javsscript propio-->
 <script src="/JS/index.js"></script>
+
 </html>
