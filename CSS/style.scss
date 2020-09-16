@@ -102,6 +102,7 @@ html {
                 z-index: 1;
                 background-color: $text-icon;
                 padding: 5px;
+                box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
 
                 &-menu {
                     display: none;
@@ -275,7 +276,7 @@ html {
                         display: none;
                     }
 
-                    &__container {
+                    &-container {
                         font-weight: 600;
                         overflow: hidden;
                         height: 45px;
@@ -309,13 +310,12 @@ html {
                             animation-iteration-count: infinite;
                         }
 
-                        &__text {
+                        &-text {
                             display: inline;
-                            float: left;
                             margin: 0;
                         }
 
-                        &__list {
+                        &-list {
                             margin-top: 0;
                             padding-left: 110px;
                             text-align: left;
@@ -328,7 +328,7 @@ html {
                             animation-duration: 10s;
                             animation-iteration-count: infinite;
 
-                            &__item {
+                            &-item {
                                 line-height: 40px;
                                 margin: 0;
                             }
