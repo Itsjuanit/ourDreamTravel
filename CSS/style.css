@@ -151,12 +151,13 @@ html body .wrapper .header-nav {
     left: 0;
     height: 100vh;
     width: 270px;
-    background-color: #000;
+    background-color: #7C4DFF;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 20px;
+    color: #FFFFFF;
   }
   html body .wrapper .header-nav.open {
     display: -webkit-inline-box;
