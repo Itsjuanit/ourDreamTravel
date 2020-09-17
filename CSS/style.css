@@ -463,36 +463,152 @@ html body .main-photo .content-container-list-item {
   }
 }
 
-html body .main-carousel-principal {
-  margin: -100px 0 50px;
-  padding: 0 80px;
+html body .main .instagram {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-  background-color: #FFFFFF;
-  min-height: 130vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-html body .main-carousel-principal .first-carousel .series-title-one {
-  font-size: 1.5em;
-  padding-bottom: 22px;
-  padding-top: 10px;
+html body .main-quienes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
 @media (max-width: 568px) {
-  html body .main-carousel-principal .first-carousel .flechas {
-    display: none;
+  html body .main-quienes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
 @media (max-width: 320px) {
-  html body .main-carousel-principal .first-carousel .flechas {
-    display: none;
+  html body .main-quienes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+html body .main-quienes-us {
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #212121;
+}
+
+@media (max-width: 568px) {
+  html body .main-quienes-us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 320px) {
+  html body .main-quienes-us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+html body .main-quienes-us .img {
+  float: right;
+  margin-top: 7rem;
+  margin-right: 3rem;
+}
+
+html body .main-quienes-us-subtitle {
+  margin-top: 10rem;
+  margin-left: 3rem;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+@media (max-width: 568px) {
+  html body .main-quienes-us-subtitle {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  html body .main-quienes-us-subtitle {
+    font-size: 2rem;
+  }
+}
+
+html body .main-quienes-us-parrafo {
+  text-align: justify;
+  margin-left: 3rem;
+  width: 40%;
+  font-weight: 500;
+}
+
+@media (max-width: 568px) {
+  html body .main-quienes-us-parrafo {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 320px) {
+  html body .main-quienes-us-parrafo {
+    font-size: 1rem;
+    text-align: center;
   }
 }
 
@@ -559,18 +675,17 @@ html body .footer-a a {
 }
 
 html body .footer .whats {
-  width: 220px;
-  border: 1px solid #FFFFFF;
   text-align: center;
   padding-top: 5px;
   padding-bottom: 5px;
-  border-radius: 30px;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
   cursor: pointer;
 }
 
 html body .footer .whats:hover {
+  width: 220px;
+  border-radius: 30px;
   background-color: #4cc06a;
   border: none;
 }

@@ -524,33 +524,87 @@ html {
 
             }
 
-            //COMIENZA EL CAROUSEL
-
-            &-carousel-principal {
-                margin: -100px 0 50px;
-                padding: 0 80px;
+            .instagram {
                 display: flex;
-                flex-direction: column;
-                width: 100%;
-                background-color: $text-icon;
-                min-height: 130vh;
+                justify-content: center;
+                margin: 40px;
+                align-items: center;
+            }
 
-                .first-carousel {
+            &-quienes {
+                display: flex;
+                min-width: 100vw;
+                min-height: 100vh;
 
-                    .series-title-one {
-                        font-size: 1.5em;
-                        padding-bottom: 22px;
-                        padding-top: 10px;
+                @media (max-width: $mobile-breakpoint) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                @media (max-width: $minimobile-breakpoint) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                &-us {
+                    width: 100%;
+                    flex-direction: row;
+                    color: $primary-text;
+
+                    @media (max-width: $mobile-breakpoint) {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
                     }
 
-                    .flechas {
+                    @media (max-width: $minimobile-breakpoint) {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .img {
+                        float: right;
+                        margin-top: 7rem;
+                        margin-right: 3rem;
+                    }
+
+                    &-subtitle {
+                        margin-top: 10rem;
+                        margin-left: 3rem;
+                        font-size: 3rem;
+                        margin-bottom: 30px;
+                        font-weight: 700;
 
                         @media (max-width: $mobile-breakpoint) {
-                            display: none;
+                            font-size: 2rem;
                         }
 
                         @media (max-width: $minimobile-breakpoint) {
-                            display: none;
+                            font-size: 2rem;
+                        }
+                    }
+
+                    &-parrafo {
+                        text-align: justify;
+                        margin-left: 3rem;
+                        width: 40%;
+                        font-weight: 500;
+
+                        @media (max-width: $mobile-breakpoint) {
+                            font-size: 1rem;
+                            text-align: center;
+                        }
+
+                        @media (max-width: $minimobile-breakpoint) {
+                            font-size: 1rem;
+                            text-align: center;
                         }
                     }
                 }
@@ -590,16 +644,15 @@ html {
             }
 
             .whats {
-                width: 220px;
-                border: 1px solid $text-icon;
                 text-align: center;
                 padding-top: 5px;
                 padding-bottom: 5px;
-                border-radius: 30px;
                 transition: color 0.5s;
                 cursor: pointer;
 
                 &:hover {
+                    width: 220px;
+                    border-radius: 30px;
                     background-color: #4cc06a;
                     border: none;
                 }
