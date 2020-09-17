@@ -496,156 +496,98 @@ html body .main-carousel-principal .first-carousel .series-title-one {
   }
 }
 
-html body .main-carousel-principal .second-carousel .series-title {
-  font-size: 1.5em;
-  padding-bottom: 22px;
-  padding-top: 54px;
+html body .footer {
+  max-width: 100vw;
+  background-color: #7C4DFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-@media (max-width: 568px) {
-  html body .main-carousel-principal .second-carousel .flechas {
-    display: none;
-  }
+html body .footer-a {
+  margin: 1em;
+  font-size: 2em;
 }
 
-@media (max-width: 320px) {
-  html body .main-carousel-principal .second-carousel .flechas {
-    display: none;
-  }
+html body .footer-a a {
+  color: #FFFFFF;
+  -webkit-transition: -webkit-transform 2s all;
+  transition: -webkit-transform 2s all;
+  transition: transform 2s all;
+  transition: transform 2s all, -webkit-transform 2s all;
 }
 
-html body .main-carousel-principal .second-carousel .progress {
-  margin: 15px;
-  width: 221px;
-  height: 10px;
-  background-color: #858585;
+html body .footer-a a .fab .fa-github .fa-linkedin-in .fa-dribbble .fa-behance {
+  -webkit-transition: -webkit-transform 2s all;
+  transition: -webkit-transform 2s all;
+  transition: transform 2s all;
+  transition: transform 2s all, -webkit-transform 2s all;
+  color: #FFFFFF;
 }
 
-html body .main-carousel-principal .second-carousel .progress-bar {
-  width: 157px;
-  height: 10px;
-  background-color: #C60F0E;
+html body .footer-a a .fab .fa-github .fa-linkedin-in .fa-dribbble .fa-behance:hover {
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
-html body .main-carousel-principal .second-carousel .progress-A {
-  margin: 15px;
-  width: 221px;
-  height: 10px;
-  background-color: #858585;
+html body .footer-a .far .fa-envelope {
+  -webkit-transition: -webkit-transform 2s all;
+  transition: -webkit-transform 2s all;
+  transition: transform 2s all;
+  transition: transform 2s all, -webkit-transform 2s all;
+  color: #FFFFFF;
 }
 
-html body .main-carousel-principal .second-carousel .progress-A .A {
-  width: 60px;
-  height: 10px;
-  background-color: #C60F0E;
+html body .footer-a .far .fa-envelope:hover {
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+  color: #FFFFFF;
 }
 
-html body .main-carousel-principal .second-carousel .progress-B {
-  margin: 15px;
-  width: 221px;
-  height: 10px;
-  background-color: #858585;
+html body .copy {
+  max-width: 100vw;
+  background-color: #7C4DFF;
+  padding: 10px 0 10px 5px;
+  color: #FFFFFF;
 }
 
-html body .main-carousel-principal .second-carousel .progress-B .B {
-  width: 26px;
-  height: 10px;
-  background-color: #C60F0E;
+html body .copy p {
+  padding: 10px 0 10px 5px;
 }
 
-html body .main-carousel-principal .second-carousel .progress-C {
-  margin: 15px;
-  width: 221px;
-  height: 10px;
-  background-color: #858585;
+html body .itsjuanit {
+  max-width: 100vw;
+  background-color: #7C4DFF;
+  padding: 10px 0 10px 0;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
 }
 
-html body .main-carousel-principal .second-carousel .progress-C .C {
-  width: 0px;
-  height: 10px;
-  background-color: #C60F0E;
+html body .itsjuanit::after {
+  text-decoration: none;
 }
 
-html body .main-carousel-principal .second-carousel .progress-D {
-  margin: 15px;
-  width: 221px;
-  height: 10px;
-  background-color: #858585;
+html body .itsjuanit a {
+  text-decoration: none;
+  color: #FFFFFF;
+  padding-left: 5px;
 }
 
-html body .main-carousel-principal .second-carousel .progress-D .D {
-  width: 30px;
-  height: 10px;
-  background-color: #C60F0E;
-}
-
-html body .main-carousel-principal .second-carousel .progress-E {
-  margin: 15px;
-  width: 221px;
-  height: 10px;
-  background-color: #858585;
-}
-
-html body .main-carousel-principal .second-carousel .progress-E .E {
-  width: 80px;
-  height: 10px;
-  background-color: #C60F0E;
-}
-
-html body .main-carousel-principal .second-carousel .progress-F {
-  margin: 15px;
-  width: 221px;
-  height: 10px;
-  background-color: #858585;
-}
-
-html body .main-carousel-principal .second-carousel .progress-F .F {
-  width: 45px;
-  height: 10px;
-  background-color: #C60F0E;
-}
-
-html body .main-carousel-principal .second-carousel .progress-G {
-  margin: 15px;
-  width: 221px;
-  height: 10px;
-  background-color: #858585;
-}
-
-html body .main-carousel-principal .second-carousel .progress-G .G {
-  width: 10px;
-  height: 10px;
-  background-color: #C60F0E;
-}
-
-html body .main-carousel-principal .second-carousel .progress-H {
-  margin: 15px;
-  width: 221px;
-  height: 10px;
-  background-color: #858585;
-}
-
-html body .main-carousel-principal .second-carousel .progress-H .H {
-  width: 55px;
-  height: 10px;
-  background-color: #C60F0E;
-}
-
-html body .main-carousel-principal .third-carousel .series-title {
-  font-size: 1.5em;
-  padding-bottom: 22px;
-  padding-top: 54px;
-}
-
-@media (max-width: 568px) {
-  html body .main-carousel-principal .third-carousel .flechas {
-    display: none;
-  }
-}
-
-@media (max-width: 320px) {
-  html body .main-carousel-principal .third-carousel .flechas {
-    display: none;
-  }
+html body .itsjuanit a::after {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */
