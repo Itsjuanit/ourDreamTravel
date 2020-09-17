@@ -564,6 +564,20 @@ html {
             flex-wrap: wrap;
             justify-content: center;
 
+            @media (max-width: $mobile-breakpoint) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            @media (max-width: $minimobile-breakpoint) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
             &-a {
                 margin: 1em;
                 font-size: 2em;
@@ -571,26 +585,30 @@ html {
                 a {
                     color: $text-icon;
                     transition: transform 2s all;
-
-                    .fab .fa-github .fa-linkedin-in .fa-dribbble .fa-behance {
-                        transition: transform 2s all;
-                        color: $text-icon;
-
-                        &:hover {
-                            transform: scale(1.09);
-                            color: $text-icon;
-                            text-decoration: none;
-                        }
-                    }
                 }
 
-                .far .fa-envelope {
-                    transition: transform 2s all;
-                    color: $text-icon;
+            }
 
-                    &:hover {
-                        transform: scale(1.09);
-                        color: $text-icon;
+            .whats {
+                width: 220px;
+                border: 1px solid $text-icon;
+                text-align: center;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                border-radius: 30px;
+                transition: color 0.5s;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #4cc06a;
+                    border: none;
+                }
+
+                a {
+                    text-decoration: none;
+
+                    &::after {
+                        text-decoration: none;
                     }
                 }
             }

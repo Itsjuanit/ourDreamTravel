@@ -509,6 +509,42 @@ html body .footer {
           justify-content: center;
 }
 
+@media (max-width: 568px) {
+  html body .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 320px) {
+  html body .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 html body .footer-a {
   margin: 1em;
   font-size: 2em;
@@ -522,33 +558,29 @@ html body .footer-a a {
   transition: transform 2s all, -webkit-transform 2s all;
 }
 
-html body .footer-a a .fab .fa-github .fa-linkedin-in .fa-dribbble .fa-behance {
-  -webkit-transition: -webkit-transform 2s all;
-  transition: -webkit-transform 2s all;
-  transition: transform 2s all;
-  transition: transform 2s all, -webkit-transform 2s all;
-  color: #FFFFFF;
+html body .footer .whats {
+  width: 220px;
+  border: 1px solid #FFFFFF;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 30px;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  cursor: pointer;
 }
 
-html body .footer-a a .fab .fa-github .fa-linkedin-in .fa-dribbble .fa-behance:hover {
-  -webkit-transform: scale(1.09);
-          transform: scale(1.09);
-  color: #FFFFFF;
+html body .footer .whats:hover {
+  background-color: #4cc06a;
+  border: none;
+}
+
+html body .footer .whats a {
   text-decoration: none;
 }
 
-html body .footer-a .far .fa-envelope {
-  -webkit-transition: -webkit-transform 2s all;
-  transition: -webkit-transform 2s all;
-  transition: transform 2s all;
-  transition: transform 2s all, -webkit-transform 2s all;
-  color: #FFFFFF;
-}
-
-html body .footer-a .far .fa-envelope:hover {
-  -webkit-transform: scale(1.09);
-          transform: scale(1.09);
-  color: #FFFFFF;
+html body .footer .whats a::after {
+  text-decoration: none;
 }
 
 html body .copy {
