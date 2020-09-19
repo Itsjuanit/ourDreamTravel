@@ -369,7 +369,6 @@ html {
                     box-shadow: 15px 15px 35px rgba(0, 0, 0, 0.267);
                     background: $text-icon;
                     color: $primary-text;
-
                 }
 
                 @media (max-width: $mobile-breakpoint) {
@@ -432,7 +431,7 @@ html {
 
                 &:hover {
                     width: 220px;
-                    border-radius: 30px;
+                    border-radius: 5px;
                     background-color: #4cc06a;
                     border: none;
                 }
