@@ -476,6 +476,18 @@ html body .main .instagram {
           align-items: center;
 }
 
+@media (max-width: 568px) {
+  html body .main .instagram {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  html body .main .instagram {
+    display: none;
+  }
+}
+
 html body .main-quienes {
   display: -webkit-box;
   display: -ms-flexbox;
