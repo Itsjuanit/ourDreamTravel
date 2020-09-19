@@ -7,6 +7,8 @@
 //FONT
 $principal-font: 'Open Sans',
 sans-serif;
+$second-font: 'Dancing Script',
+cursive;
 
 //PALETA DE COLORES
 $dark-primary-color: #1976D2;
@@ -608,6 +610,96 @@ html {
                         }
                     }
                 }
+            }
+        }
+
+        .dicen {
+            font-size: 3rem;
+            color: $primary-text;
+            text-align: center;
+            font-family: $second-font;
+            margin-bottom: 20px;
+        }
+
+        .clientes {
+            width: 100vw;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+
+
+            @media (max-width: $mobile-breakpoint) {
+                width: 100vw;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 0 auto;
+            }
+
+            @media (max-width: $minimobile-breakpoint) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 100vw;
+                height: auto;
+                margin: 0 auto;
+            }
+            .profile {
+                font-family: $principal-font;
+                text-align: center;
+                max-width: 200px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+                padding: 20px;
+                margin-right: 50px;
+                background-color: #fafafa;
+                transition: 1s all;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+
+                @media (max-width: $mobile-breakpoint) {
+                    width: 100vw;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-bottom: 10px;
+                    align-items: center;
+                    margin: auto;
+                }
+    
+                @media (max-width: $minimobile-breakpoint) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 100vw;
+                    height: auto;
+                    align-items: center;
+                }
+
+                &-image {
+                    width: 150px;
+                    height: 150px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    margin: 0 auto 20px auto;
+                    display: block;
+                }
+
+                &-name {
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    color: $primary-text;
+                    margin-bottom: 30px;
+                }
+
+                &-title {
+                    color: $primary-text;
+                    margin-bottom: 20px;
+                }
+
             }
         }
 

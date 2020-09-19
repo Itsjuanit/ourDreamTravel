@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/CSS/glide.theme.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="manifest" href="/site.webmanifest">
     <script src="https://kit.fontawesome.com/9634c964d7.js" crossorigin="anonymous"></script>
     <title>Our Dream Travel</title>
@@ -38,12 +39,40 @@
         <main class="main" id="nosotros">
             <!--Serie principal con botones y breve descripcion-->
             <div class="main-photo">
-                <h2 class="main-photo-secondarytText">Viaja con</h2>
-                <h1 class="main-photo-principalText">Our Dream Travel</h1>
+                <h2 class="main-photo-secondarytText animate__animated animate__fadeInDown">Viaja con</h2>
+                <h1 class="main-photo-principalText animate__animated animate__fadeInDown">Our Dream Travel</h1>
                 <h2 class="main-photo-secondarytText">Algunos de nuestros destinos..</h2>
             </div>
         </main>
 
+
+        <h3 class="container-viajar">A viajar</h3>
+        <h2 class="container-destinos">Algunos de nuestros destinos</h2>
+        <div class="container">
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide"><img src="/SRC/1-img-odt.png" alt="Imagen de BORA BORA"></li>
+                        <li class="glide__slide"><img src="/SRC/2-img-odt.png" alt="Imagen de cataratas del Iguazu">
+                        </li>
+                        <li class="glide__slide"><img src="/SRC/3-img-odt.png" alt="Imagen de BORA BORA"></li>
+                        <li class="glide__slide"><img src="/SRC/4-img-odt.png" alt="Imagen de playa de Brasil"></li>
+                        <li class="glide__slide"><img src="/SRC/5-img-odt.png" alt="Imagen de Londres"></li>
+                        <li class="glide__slide"><img src="/SRC/6-img-odt.png" alt="Imagen de Grecia"></li>
+                        <li class="glide__slide"><img src="/SRC/7-img-odt.png" alt="Imagen de Machi Pichu Peru"></li>
+                        <li class="glide__slide"><img src="/SRC/8-img-odt.png"
+                                alt="Imagen aerea del Pan de Azucar en Brasil"></li>
+                        <li class="glide__slide"><img src="/SRC/9-img-odt.png" alt=""></li>
+                    </ul>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                            class="fas fa-chevron-left"></i></button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                            class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
         <article class="cardsContainer">
             <div class="box">
                 <img src="/SRC/1-img-odt.png" alt="">
@@ -79,33 +108,7 @@
             </div>
         </article>
 
-        <h3 class="container-viajar">A viajar</h3>
-        <h2 class="container-destinos">Algunos de nuestros destinos</h2>
-        <div class="container">
-            <div class="glide">
-                <div class="glide__track" data-glide-el="track">
-                    <ul class="glide__slides">
-                        <li class="glide__slide"><img src="/SRC/1-img-odt.png" alt="Imagen de BORA BORA"></li>
-                        <li class="glide__slide"><img src="/SRC/2-img-odt.png" alt="Imagen de cataratas del Iguazu">
-                        </li>
-                        <li class="glide__slide"><img src="/SRC/3-img-odt.png" alt="Imagen de BORA BORA"></li>
-                        <li class="glide__slide"><img src="/SRC/4-img-odt.png" alt="Imagen de playa de Brasil"></li>
-                        <li class="glide__slide"><img src="/SRC/5-img-odt.png" alt="Imagen de Londres"></li>
-                        <li class="glide__slide"><img src="/SRC/6-img-odt.png" alt="Imagen de Grecia"></li>
-                        <li class="glide__slide"><img src="/SRC/7-img-odt.png" alt="Imagen de Machi Pichu Peru"></li>
-                        <li class="glide__slide"><img src="/SRC/8-img-odt.png"
-                                alt="Imagen aerea del Pan de Azucar en Brasil"></li>
-                        <li class="glide__slide"><img src="/SRC/9-img-odt.png" alt=""></li>
-                    </ul>
-                </div>
-                <div class="glide__arrows" data-glide-el="controls">
-                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
-                            class="fas fa-chevron-left"></i></button>
-                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
-                            class="fas fa-chevron-right"></i></button>
-                </div>
-            </div>
-        </div>
+
         <footer class="footer ">
             <img src="/SRC/OurDreamTravel.png" alt="Logotipo de Our Dream Travel" width="200px" class="img">
             <span class="footer-a">
