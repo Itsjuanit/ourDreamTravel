@@ -1,0 +1,476 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+//FONT
+$principal-font: 'Open Sans',
+sans-serif;
+$second-font: 'Dancing Script',
+cursive;
+
+//PALETA DE COLORES
+$dark-primary-color: #1976D2;
+$light-primary-color: #BBDEFB;
+$primary-color: #2196F3;
+$text-icon: #FFFFFF;
+$accentPur-color: #7C4DFF;
+$primary-text: #212121;
+$secondary-text: #757575;
+$divider-text: #BDBDBD;
+
+/*BREAK POINTS*/
+$minimobile-breakpoint: 320px;
+$mobile-breakpoint: 568px;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1280px;
+
+html {
+    scroll-behavior: smooth;
+
+    //ESTILOS EN SCROLLBAR
+    &::-webkit-scrollbar {
+        width: 13px;
+        height: 2px;
+    }
+
+    //Estilos barra (thumb) de scroll
+    &::-webkit-scrollbar-thumb {
+        background: $accentPur-color;
+        border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb:active {
+        background-color: $text-icon;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: $text-icon;
+        box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    //Estilos track de scroll
+    &::-webkit-scrollbar-track {
+        background: $text-icon;
+        border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-track:hover,
+    &::-webkit-scrollbar-track:active {
+        background: $accentPur-color;
+    }
+
+
+    body {
+        background-color: $text-icon;
+        overflow-x: hidden;
+
+        #myBtn {
+            width: 50px;
+            height: 50px;
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: $accentPur-color;
+            color: #fff;
+            cursor: pointer;
+            padding: 4px;
+            border-radius: 100px;
+
+            &:hover {
+                background-color: $dark-primary-color;
+            }
+        }
+
+        .wrapper {
+            min-width: 100vw;
+            font-family: $principal-font;
+            background-color: $text-icon;
+
+            .header {
+                width: 100%;
+                height: 65px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-weight: 600;
+                position: fixed;
+                z-index: 1;
+                background-color: $text-icon;
+                padding: 5px;
+                box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+
+                &-menu {
+                    display: none;
+                    padding: 0;
+                    border: 0;
+                    background-color: transparent;
+                    width: 50px;
+                    height: 50px;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1.7em;
+
+                    @media (max-width: $mobile-breakpoint) {
+                        display: none;
+                        display: inline-flex;
+                    }
+
+                    .fa-bars {
+                        color: $accentPur-color;
+                        transition: 1s all;
+
+                        &:hover {
+                            transform: rotate(360deg);
+                        }
+                    }
+                }
+
+                &-logo {
+                    border-right: 30px;
+                    margin-right: 87.3px;
+                    margin-left: 81px;
+                }
+
+                &-nav {
+                    white-space: nowrap;
+                    display: flex;
+                    font-size: 1.2rem;
+
+                    @media (max-width: $mobile-breakpoint) {
+                        display: none;
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        height: 100vh;
+                        width: 270px;
+                        background-color: $accentPur-color;
+                        flex-direction: column;
+                        padding: 20px;
+                        color: $text-icon;
+
+                        &.open {
+                            display: inline-flex;
+                        }
+                    }
+
+                    .anchor {
+                        font-size: 1.4rem;
+                        position: relative;
+                        display: inline-block;
+                        padding: 1rem 0.5rem;
+                        text-decoration: none;
+                        color: inherit;
+                        transition: all 0.2s;
+                        color: $primary-text;
+                        text-decoration: none;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            right: 100%;
+                            display: inline-block;
+                            height: 0.1rem;
+                            background: $accentPur-color;
+                            transition: all 0.25s cubic-bezier(1, 0.1, 0.16, 0.9);
+                        }
+
+                        &:hover {
+                            color: $accentPur-color;
+                        }
+
+                        &:hover::after {
+                            right: 0;
+                            height: 1px;
+                            background: $accentPur-color;
+                        }
+
+
+                    }
+                }
+            }
+        }
+
+        .main {
+            color: $text-icon;
+
+            @media (max-width: $mobile-breakpoint) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                overflow-x: hidden;
+                min-width: 100vw;
+            }
+
+            &-photo {
+                background-image: url(/SRC/nuevaYork-img-odt.jpg);
+                background-size: cover;
+                background-position: center;
+                padding: 160px 80px 120px;
+                min-height: 85vh;
+                color: $text-icon;
+                min-height: 160vh;
+
+                @media (max-width: $mobile-breakpoint) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                &-secondarytText {
+                    font-size: 1.5em;
+                    margin-bottom: 18px;
+                    font-weight: bold;
+
+                    @media (max-width: $mobile-breakpoint) {
+                        font-size: 1.4em;
+                    }
+
+                    @media (max-width: $minimobile-breakpoint) {
+                        display: none;
+                    }
+                }
+
+                &-principalText {
+                    font-size: 7.5em;
+                    margin-bottom: 15px;
+                    line-height: 1em;
+                    max-width: 650px;
+                    font-weight: bold;
+
+                    @media (max-width: $mobile-breakpoint) {
+                        font-size: 5em;
+                    }
+
+                    @media (max-width: $minimobile-breakpoint) {
+                        font-size: 3.8em;
+                    }
+                }
+            }
+        }
+
+        .form {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 100px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                background: url("/SRC/machu-picchu-1569324_1280.jpg") no-repeat center;
+                background-size: cover;
+                filter: blur(50px);
+                z-index: -1;
+            }
+
+            @media (max-width: $mobile-breakpoint) {
+                font-size: 1.7em;
+            }
+
+            @media (max-width: $minimobile-breakpoint) {
+                font-size: 1.7em;
+            }
+
+            .contact-box {
+                max-width: 850px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                background-color: #fff;
+                box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+
+
+                .left {
+                    background: url("/SRC/machu-picchu-1569324_1280.jpg") no-repeat center;
+                    background-size: cover;
+                    height: 100%;
+                }
+
+                .right {
+                    padding: 25px 40px;
+
+
+                    .field {
+                        width: 100%;
+                        border: 2px solid rgba(0, 0, 0, 0);
+                        outline: none;
+                        background-color: rgba(230, 230, 230, 0.6);
+                        padding: 0.5rem 1rem;
+                        font-size: 1.1rem;
+                        margin-bottom: 22px;
+                        transition: .3s;
+
+                        &:hover {
+                            background-color: rgba(0, 0, 0, 0.1);
+                        }
+
+                        &:focus {
+                            border: 2px solid rgba(30, 85, 250, 0.47);
+                            background-color: #fff;
+                        }
+
+                    }
+
+                    textarea {
+                        min-height: 150px;
+                    }
+
+                    .btn {
+                        width: 200px;
+                        text-decoration: none;
+                        width: 100%;
+                        padding: 0.5rem 10rem;
+                        background-color: $text-icon;
+                        color: $primary-text;
+                        font-size: 1.1rem;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                        transition: .3s;
+                        border: 1px solid $accentPur-color;
+
+                        &:hover {
+                            background-color: $accentPur-color;
+                            color: $text-icon;
+                        }
+
+                        &::after {
+                            text-decoration: none;
+                        }
+                    }
+
+                    h2 {
+                        position: relative;
+                        padding: 0 0 10px;
+                        margin-bottom: 10px;
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            left: 50%;
+                            bottom: 0;
+                            transform: translateX(-50%);
+                            height: 4px;
+                            width: 50px;
+                            border-radius: 2px;
+                            background-color: $accentPur-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        max-width: 100vw;
+        background-color: $accentPur-color;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @media (max-width: $mobile-breakpoint) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media (max-width: $minimobile-breakpoint) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-a {
+            margin: 1em;
+            font-size: 2em;
+
+            a {
+                color: $text-icon;
+                transition: transform 2s all;
+            }
+
+        }
+
+        .whats {
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            transition: color 0.5s;
+            cursor: pointer;
+
+            &:hover {
+                width: 220px;
+                border-radius: 5px;
+                background-color: #4cc06a;
+                border: none;
+            }
+
+            a {
+                text-decoration: none;
+
+                &::after {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .copy {
+        max-width: 100vw;
+        background-color: $accentPur-color;
+        padding: 10px 0 10px 5px;
+        color: $text-icon;
+
+        p {
+            padding: 10px 0 10px 5px;
+        }
+    }
+
+    .itsjuanit {
+        max-width: 100vw;
+        background-color: $accentPur-color;
+        padding: 10px 0 10px 0;
+        color: $text-icon;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+
+        &::after {
+            text-decoration: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: $text-icon;
+            padding-left: 5px;
+
+            &::after {
+                text-decoration: none;
+                color: $text-icon;
+            }
+        }
+    }
+}
