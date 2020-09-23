@@ -5,20 +5,20 @@
 }
 
 //FONT
-$principal-font: 'Open Sans',
+$principal-font: "Open Sans",
 sans-serif;
-$second-font: 'Dancing Script',
+$second-font: "Dancing Script",
 cursive;
 
 //PALETA DE COLORES
-$dark-primary-color: #1976D2;
-$light-primary-color: #BBDEFB;
-$primary-color: #2196F3;
-$text-icon: #FFFFFF;
-$accentPur-color: #7C4DFF;
+$dark-primary-color: #1976d2;
+$light-primary-color: #bbdefb;
+$primary-color: #2196f3;
+$text-icon: #ffffff;
+$accentPur-color: #7c4dff;
 $primary-text: #212121;
 $secondary-text: #757575;
-$divider-text: #BDBDBD;
+$divider-text: #bdbdbd;
 
 /*BREAK POINTS*/
 $minimobile-breakpoint: 320px;
@@ -60,7 +60,6 @@ html {
     &::-webkit-scrollbar-track:active {
         background: $accentPur-color;
     }
-
 
     body {
         background-color: $text-icon;
@@ -192,37 +191,43 @@ html {
                             height: 1px;
                             background: $accentPur-color;
                         }
-
-
                     }
                 }
+            }
+        }
+
+        .invisible {
+            width: 100vw;
+            min-height: 10vh;
+
+            h3 {
+                color: $text-icon;
             }
         }
 
         .form {
             position: relative;
             width: 100vw;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 20px 100px;
 
             @media (max-width: $mobile-breakpoint) {
-
                 display: flex;
                 font-size: 1.7em;
                 justify-content: center;
             }
 
             @media (max-width: $minimobile-breakpoint) {
-
                 display: flex;
                 font-size: 1.7em;
                 justify-content: center;
             }
+
             &::after {
-                content: '';
+                content: "";
                 position: absolute;
                 width: 100vw;
                 height: 100vh;
@@ -234,7 +239,6 @@ html {
                 z-index: -1;
             }
 
-
             .contact-box {
                 max-width: 850px;
                 display: grid;
@@ -244,7 +248,6 @@ html {
                 text-align: center;
                 background-color: #fff;
                 box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
-
 
                 .left {
                     background: url("/SRC/machu-picchu-1569324_1280.jpg") no-repeat center;
@@ -258,7 +261,6 @@ html {
                     @media (max-width: $minimobile-breakpoint) {
                         display: none;
                     }
-
                 }
 
                 .right {
@@ -286,7 +288,7 @@ html {
                         padding: 0.5rem 1rem;
                         font-size: 1.1rem;
                         margin-bottom: 22px;
-                        transition: .3s;
+                        transition: 0.3s;
 
                         &:hover {
                             background-color: rgba(0, 0, 0, 0.1);
@@ -296,7 +298,6 @@ html {
                             border: 2px solid rgba(30, 85, 250, 0.47);
                             background-color: #fff;
                         }
-
                     }
 
                     textarea {
@@ -314,7 +315,7 @@ html {
                         border-radius: 4px;
                         outline: none;
                         cursor: pointer;
-                        transition: .3s;
+                        transition: 0.3s;
                         border: 1px solid $accentPur-color;
 
                         &:hover {
@@ -334,7 +335,7 @@ html {
                         margin-bottom: 10px;
 
                         &::after {
-                            content: '';
+                            content: "";
                             position: absolute;
                             left: 50%;
                             bottom: 0;
@@ -379,7 +380,6 @@ html {
                 color: $text-icon;
                 transition: transform 2s all;
             }
-
         }
 
         .whats {
