@@ -199,81 +199,33 @@ html {
             }
         }
 
-        .main {
-            color: $text-icon;
-
-            @media (max-width: $mobile-breakpoint) {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                padding: 10px;
-                overflow-x: hidden;
-                min-width: 100vw;
-            }
-
-            &-photo {
-                background-image: url(/SRC/nuevaYork-img-odt.jpg);
-                background-size: cover;
-                background-position: center;
-                padding: 160px 80px 120px;
-                min-height: 85vh;
-                color: $text-icon;
-                min-height: 160vh;
-
-                @media (max-width: $mobile-breakpoint) {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                }
-
-                &-secondarytText {
-                    font-size: 1.5em;
-                    margin-bottom: 18px;
-                    font-weight: bold;
-
-                    @media (max-width: $mobile-breakpoint) {
-                        font-size: 1.4em;
-                    }
-
-                    @media (max-width: $minimobile-breakpoint) {
-                        display: none;
-                    }
-                }
-
-                &-principalText {
-                    font-size: 7.5em;
-                    margin-bottom: 15px;
-                    line-height: 1em;
-                    max-width: 650px;
-                    font-weight: bold;
-
-                    @media (max-width: $mobile-breakpoint) {
-                        font-size: 5em;
-                    }
-
-                    @media (max-width: $minimobile-breakpoint) {
-                        font-size: 3.8em;
-                    }
-                }
-            }
-        }
-
         .form {
             position: relative;
-            width: 100%;
-            height: 100%;
+            width: 100vw;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 20px 100px;
 
+            @media (max-width: $mobile-breakpoint) {
+
+                display: flex;
+                font-size: 1.7em;
+                justify-content: center;
+            }
+
+            @media (max-width: $minimobile-breakpoint) {
+
+                display: flex;
+                font-size: 1.7em;
+                justify-content: center;
+            }
             &::after {
                 content: '';
                 position: absolute;
-                width: 100%;
-                height: 100%;
+                width: 100vw;
+                height: 100vh;
                 left: 0;
                 top: 0;
                 background: url("/SRC/machu-picchu-1569324_1280.jpg") no-repeat center;
@@ -282,13 +234,6 @@ html {
                 z-index: -1;
             }
 
-            @media (max-width: $mobile-breakpoint) {
-                font-size: 1.7em;
-            }
-
-            @media (max-width: $minimobile-breakpoint) {
-                font-size: 1.7em;
-            }
 
             .contact-box {
                 max-width: 850px;
@@ -305,11 +250,33 @@ html {
                     background: url("/SRC/machu-picchu-1569324_1280.jpg") no-repeat center;
                     background-size: cover;
                     height: 100%;
+
+                    @media (max-width: $mobile-breakpoint) {
+                        display: none;
+                    }
+
+                    @media (max-width: $minimobile-breakpoint) {
+                        display: none;
+                    }
+
                 }
 
                 .right {
                     padding: 25px 40px;
 
+                    @media (max-width: $mobile-breakpoint) {
+                        width: 100%;
+                        display: flex;
+                        font-size: 1.7em;
+                        flex-direction: column;
+                    }
+
+                    @media (max-width: $minimobile-breakpoint) {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        font-size: 1.7em;
+                    }
 
                     .field {
                         width: 100%;
@@ -337,7 +304,7 @@ html {
                     }
 
                     .btn {
-                        width: 200px;
+                        width: 100px;
                         text-decoration: none;
                         width: 100%;
                         padding: 0.5rem 10rem;
@@ -361,6 +328,7 @@ html {
                     }
 
                     h2 {
+                        font-size: 1.6rem;
                         position: relative;
                         padding: 0 0 10px;
                         margin-bottom: 10px;

@@ -202,101 +202,10 @@ html body .wrapper .header-nav .anchor:hover::after {
   background: #7C4DFF;
 }
 
-html body .main {
-  color: #FFFFFF;
-}
-
-@media (max-width: 568px) {
-  html body .main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 10px;
-    overflow-x: hidden;
-    min-width: 100vw;
-  }
-}
-
-html body .main-photo {
-  background-image: url(/SRC/nuevaYork-img-odt.jpg);
-  background-size: cover;
-  background-position: center;
-  padding: 160px 80px 120px;
-  min-height: 85vh;
-  color: #FFFFFF;
-  min-height: 160vh;
-}
-
-@media (max-width: 568px) {
-  html body .main-photo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-html body .main-photo-secondarytText {
-  font-size: 1.5em;
-  margin-bottom: 18px;
-  font-weight: bold;
-}
-
-@media (max-width: 568px) {
-  html body .main-photo-secondarytText {
-    font-size: 1.4em;
-  }
-}
-
-@media (max-width: 320px) {
-  html body .main-photo-secondarytText {
-    display: none;
-  }
-}
-
-html body .main-photo-principalText {
-  font-size: 7.5em;
-  margin-bottom: 15px;
-  line-height: 1em;
-  max-width: 650px;
-  font-weight: bold;
-}
-
-@media (max-width: 568px) {
-  html body .main-photo-principalText {
-    font-size: 5em;
-  }
-}
-
-@media (max-width: 320px) {
-  html body .main-photo-principalText {
-    font-size: 3.8em;
-  }
-}
-
 html body .form {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -309,11 +218,35 @@ html body .form {
   padding: 20px 100px;
 }
 
+@media (max-width: 568px) {
+  html body .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.7em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 320px) {
+  html body .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.7em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 html body .form::after {
   content: '';
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   left: 0;
   top: 0;
   background: url("/SRC/machu-picchu-1569324_1280.jpg") no-repeat center;
@@ -321,18 +254,6 @@ html body .form::after {
   -webkit-filter: blur(50px);
           filter: blur(50px);
   z-index: -1;
-}
-
-@media (max-width: 568px) {
-  html body .form {
-    font-size: 1.7em;
-  }
-}
-
-@media (max-width: 320px) {
-  html body .form {
-    font-size: 1.7em;
-  }
 }
 
 html body .form .contact-box {
@@ -359,8 +280,48 @@ html body .form .contact-box .left {
   height: 100%;
 }
 
+@media (max-width: 568px) {
+  html body .form .contact-box .left {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  html body .form .contact-box .left {
+    display: none;
+  }
+}
+
 html body .form .contact-box .right {
   padding: 25px 40px;
+}
+
+@media (max-width: 568px) {
+  html body .form .contact-box .right {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.7em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 320px) {
+  html body .form .contact-box .right {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 1.7em;
+  }
 }
 
 html body .form .contact-box .right .field {
@@ -389,7 +350,7 @@ html body .form .contact-box .right textarea {
 }
 
 html body .form .contact-box .right .btn {
-  width: 200px;
+  width: 100px;
   text-decoration: none;
   width: 100%;
   padding: 0.5rem 10rem;
@@ -414,6 +375,7 @@ html body .form .contact-box .right .btn::after {
 }
 
 html body .form .contact-box .right h2 {
+  font-size: 1.6rem;
   position: relative;
   padding: 0 0 10px;
   margin-bottom: 10px;
