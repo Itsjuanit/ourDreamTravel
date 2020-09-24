@@ -23,8 +23,9 @@ $divider-text: #BDBDBD;
 /*BREAK POINTS*/
 $minimobile-breakpoint: 320px;
 $mobile-breakpoint: 568px;
-$tablet-breakpoint: 768px;
+$tablet-breakpoint: 800px;
 $desktop-breakpoint: 1280px;
+
 
 html {
     scroll-behavior: smooth;
@@ -276,6 +277,10 @@ html {
                     }
 
                     @media (max-width: $minimobile-breakpoint) {
+                        display: none;
+                    }
+
+                    @media (max-width: $tablet-breakpoint) {
                         display: none;
                     }
 

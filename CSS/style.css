@@ -320,6 +320,12 @@ html body .main-photo .content {
   }
 }
 
+@media (max-width: 800px) {
+  html body .main-photo .content {
+    display: none;
+  }
+}
+
 html body .main-photo .content-container {
   font-weight: 600;
   overflow: hidden;

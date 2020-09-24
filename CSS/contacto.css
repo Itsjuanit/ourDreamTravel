@@ -258,7 +258,7 @@ html body .form::after {
   height: 100vh;
   left: 0;
   top: 0;
-  background: url("/SRC/machu-picchu-1569324_1280.jpg") no-repeat center;
+  background: url("/SRC/BUZIOS.jpg") no-repeat center;
   background-size: cover;
   -webkit-filter: blur(50px);
           filter: blur(50px);
@@ -284,7 +284,7 @@ html body .form .contact-box {
 }
 
 html body .form .contact-box .left {
-  background: url("/SRC/machu-picchu-1569324_1280.jpg") no-repeat center;
+  background: url("/SRC/BUZIOS.jpg") no-repeat center;
   background-size: cover;
   height: 100%;
 }
