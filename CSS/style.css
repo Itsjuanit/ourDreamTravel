@@ -314,7 +314,7 @@ html body .main-photo-principalText {
 
 html body .main-photo .content {
   position: absolute;
-  top: 100%;
+  top: 110%;
   left: 20%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
