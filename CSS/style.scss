@@ -729,6 +729,43 @@ html {
             }
         }
 
+        .certificado {
+            max-width: 100vw;
+            min-height: 100vh;
+            background-color: #b59df7;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+            &-titulo {
+                color: #fff;
+                font-size: 4rem;
+                font-weight: bold;
+                margin-bottom: 40px;
+            }
+
+            &-link {
+                text-decoration: none;
+                background-color: $accentPur-color;
+                color: #fff;
+                font-size: 1.2rem;
+                border: 2px solid #fff;
+                border-radius: 10px;
+                padding: 10px 15px;
+                cursor: pointer;
+
+                &:hover {
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 1.2rem;
+                    border: 3px solid #fff;
+                    border-radius: 10px;
+                    padding: 15px 20px;
+                }
+            }
+        }
+
         .footer {
             max-width: 100vw;
             background-color: $accentPur-color;
@@ -804,6 +841,7 @@ html {
             display: flex;
             justify-content: center;
             text-decoration: none;
+            font-size: 0.7rem;
 
             &::after {
                 text-decoration: none;
